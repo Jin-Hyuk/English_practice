@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>English practice</title>
+	<meta charset="utf-8">
+	<script src="http://code.juery.com/jquery-1.11.1.min.js"></script>
+	<script src="sentence.js"></script>
+	<style> 
+	body {background-color:yellow;}
+	#answer {
+		background-color:orange; 
+		width:150px;
+		height:50px;
+		font-style: oblique;
+	}
+	</style>
+</head>
+
+<body>
+	<center>
+	<br><br>
+	<strong> 오늘의 문장 </strong>
+	<br>
+		<script>
+			var i;
+			for(i=0; i<sentence.length; i++) {
+			document.write("<br><br>");
+			document.write((i+1)+". "+sentence[i]);
+			document.write("<br>");
+						
+			}
+
+		</script>
+
+			<form>
+			<br><br>
+			<a href="index.html">
+			<br>
+			<input type="button" value="ANSWER" id="answer">
+			</a>
+		</form>
+	</center>
+</body>
+</html>
